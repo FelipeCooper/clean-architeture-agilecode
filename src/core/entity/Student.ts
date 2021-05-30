@@ -1,8 +1,12 @@
+import Cpf from "./Cpf";
+
 export default class Student {
   name: string;
-
-  constructor(name: string) {
+  cpf: Cpf;
+  constructor(name: string, cpf: Cpf) {
     this.name = name;
+    this.cpf = cpf;
+    this.validate();
   }
 
   validate() {
